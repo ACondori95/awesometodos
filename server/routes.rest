@@ -1,0 +1,22 @@
+// LOCALHOST
+### GET all todos
+GET http://localhost:4000/api/todos HTTP/1.1
+
+### POST a new todo
+POST http://localhost:4000/api/todos HTTP/1.1
+Content-Type: application/json
+
+{
+  "todo": "this is my very fifth todo"
+}
+
+### DELETE a todo
+DELETE http://localhost:4000/api/todos/667b52b8cdc698c1c58ae7d1 HTTP/1.1
+
+### PUT a todo
+PUT http://localhost:4000/api/todos/667b52b8cdc698c1c58ae7d1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "status": false
+}
